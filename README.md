@@ -22,7 +22,7 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 ```
 ├── LICENSE
 ├── README.md                           <- The top-level README for developers using this project.
-├── data                                <- Data storage directory.
+├── data_storage                        <- Data storage directory.
 │   ├── raw
 │   ├── utils        
 │   └── dataset      
