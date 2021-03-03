@@ -1,10 +1,5 @@
 
 def train_model():
+    # function to train model
     print('Train model..')
-    return None
-
-def train_epoch():
-    return None
-
-def valid_epoch():
-    return None
+    return

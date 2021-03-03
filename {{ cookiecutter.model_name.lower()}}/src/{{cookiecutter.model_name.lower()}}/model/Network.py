@@ -1,6 +1,8 @@
 import torch
 from torch import nn
 
+# define pytorch modules here
+
 class Network(nn.Module):
     def __init__(self):
         super().__init__()

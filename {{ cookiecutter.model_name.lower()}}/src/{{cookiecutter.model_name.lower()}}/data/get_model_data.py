@@ -1,4 +1,5 @@
 
 def get_model_data():
-    print('Get model data..')
-    return None
+    # get raw data for modeling
+    print('Get model data..') 
+    return
