@@ -31,16 +31,12 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 │        └── test
 │
 ├── trained_models                      <- Trained serialized models.
-│   └── model_x                             <- Example of a trained model directory (not required, only a suggestion).
-│       ├── state_dict.pt                       <- Trained model weights, serialized with torch.save().
-│       ├── log.json                            <- Training log file.
-│       └── events.out.tfevents                 <- TensorBoard events.
 │
 ├── notebooks                           <- Jupyter notebooks.
 │
 ├── references                          <- Data dictionaries, manuals, and all other explanatory materials.
 │
-├── reports                             <- Generated analysis and reports.
+├── reports                             <- Directory for analysis and reports.
 │   └── figures                         <- Generated graphics and figures to be used in reporting.
 │
 ├── src                                 <- Source code for use in this project.
@@ -48,7 +44,7 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 │       │
 │       ├── __init__.py                 <- Makes model_name a Python module.
 │       │        
-│       ├── model_name.py                <- Main model class that ties all functions together <3
+│       ├── model_name.py               <- Main model class that ties all functions together <3
 │       │
 │       ├── config                      <- Module containing configuration settings, such as hyperparameters.
 │       │   ├── __init__.py
@@ -72,13 +68,12 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 │       │   ├── __init__.py
 │       │   └── measure_performance.py
 │       │
-│       └── visualization               <- Scripts to reproducible data visualizations.
+│       └── visualization               <- Scripts to write reproducible and insightful data visualizations :p
 │           ├── __init__.py
 │           └── visualize.py
 │
 ├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
 │                                       
-│
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported.
 ```
 
@@ -86,7 +81,23 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 
 ## Workflow
 
-Description of workflow.
+When the template is initialized it creates a project structure that is ready for developing your very own PyTorch model 🔥My typical workflow using this project structure is the following:
+
+#### 1. Get Raw Data
+
+First, get the data. Write the get_model_data() function to get the raw data for modeling. Place the raw data in ~/data_storage/raw/
+
+#### 2. Data Exploration
+
+Now we need to get our hands dirty! Explore the data, analyze the problem, make some plots, remove outliers and try to come up with some input features. This process is carried out using Jupyter Notebooks which should be placed in ~/notebooks/
+
+#### 3. Build Features
+
+When the data exploration phase is done, write the build_features() function that turns the raw data into juicy features. The function should also split the dataset in train, validation and test set and place it in ~/data_storage/dataset/
+
+#### 4. Train Model
+
+Now we're ready to train the model. In this phase ...
 
 
 

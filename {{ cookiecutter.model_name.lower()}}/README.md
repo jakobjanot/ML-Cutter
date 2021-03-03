@@ -5,10 +5,11 @@
 
 Project Organization
 ------------
+
 ```
 ├── LICENSE
 ├── README.md                           <- The top-level README for developers using this project.
-├── data                                <- Data storage directory.
+├── data_storage                        <- Data storage directory.
 │   ├── raw
 │   ├── utils        
 │   └── dataset      
@@ -40,13 +41,14 @@ Project Organization
 │       │   ├── __init__.py
 │       │   └── hyperparams.py
 │       │ 
-│       ├── data                        <- Scripts to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
+│       ├── data                        <- Scripts to get raw data for modeling. The raw data should be placed in ~/data/raw/ in the project root.
 │       │   ├── __init__.py
 │       │   └── get_model_data.py
 │       │
 │       ├── features                    <- Scripts to turn raw data into features for modeling.     
 │       │   ├── __init__.py
-│       │   └── build_features.py
+│       │   ├── build_features.py
+│       │   └── Dataset.py  
 │       │
 │       ├── model                       <- Scripts to define PyTorch Model, train it and make predictions.  
 │       │   ├── __init__.py
@@ -54,11 +56,15 @@ Project Organization
 │       │   ├── train_model.py
 │       │   └── predict.py
 │       │
+│       ├── prediction                  <- Functions to make predictions.
+│       │   ├── __init__.py
+│       │   └── predict.py
+│       │
 │       ├── performance                 <- Scripts to measure performance of trained models.     
 │       │   ├── __init__.py
 │       │   └── measure_performance.py
 │       │
-│       └── visualization               <- Scripts to reproducible data visualizations.
+│       └── visualization               <- Scripts to write reproducible and insightful data visualizations.
 │           ├── __init__.py
 │           └── visualize.py
 │
@@ -67,4 +73,5 @@ Project Organization
 │
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported.
 ```
+
 --------
