@@ -11,16 +11,16 @@ class {{cookiecutter.model_name.capitalize()}}:
         self.hyperparams = hyperparams_dict
 
     def get_model_data(self):
-        return get_model_data()
+        return 
 
     def build_features(self):
-        return build_features()
+        return 
 
     def train_model(self):
-        return train_model()
+        return 
 
     def measure_performance(self):
-        return measure_performance()
+        return 
 
     def build_model(self):
 
@@ -38,10 +38,10 @@ class {{cookiecutter.model_name.capitalize()}}:
 
 
     def predict(self):
-        return predict()
+        return
 
     def download_network(self):
-        return download_network()
+        return 
 
     def load_network(self):
-        return None
+        return 
