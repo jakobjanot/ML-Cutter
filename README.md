@@ -1,5 +1,4 @@
 # PyTorch Model Package Template
-------------
 Project structure template for packaging PyTorch models.
 
 
