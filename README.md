@@ -81,7 +81,9 @@ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 
 ## Workflow
 
-When the template is initialized it creates a project structure that is ready for developing your very own PyTorch model 🔥My typical workflow using this project structure is the following:
+When the template is initialized it creates a project structure that is ready for developing your very own PyTorch model 🔥
+
+My typical workflow using this project structure is the following:
 
 #### 1. Get Raw Data
 
