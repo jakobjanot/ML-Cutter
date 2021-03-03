@@ -1,19 +1,21 @@
-# Cookiecutter PyTorch Model Template
+# PyTorch Model Package Template
+------------
+Project structure template for packaging PyTorch models.
 
-Project structure template for PyTorch models.
 
+### How to use it?
+------------
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the PyTorch model package template. So first install cookiecutter with pip:
 
-### Requirements to use the cookiecutter template:
 ``` bash
 $ pip install cookiecutter
 ```
-### To start a new project, run:
-------------
+Generate the template:
+``` bash
+$ python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
+```
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
-
-
-### The resulting directory structure
+### Project Structure
 ------------
 
 The directory structure of your new project looks like this: 
@@ -88,3 +90,14 @@ The directory structure of your new project looks like this:
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported
 
 ```
+
+### Workflow
+
+Something about the workflow.
+
+### Credits
+
+This template is inspired by the [DrivenData Data Science Template](https://github.com/drivendata/cookiecutter-data-science). Thanks!
+
+
+
