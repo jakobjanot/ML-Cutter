@@ -9,9 +9,7 @@ class Model:
     def __init__(self, network: torch.nn.Module = None, hyperparams: dict = None):
 
         self.network = network if isinstance(network, torch.nn.Module) else Network()
-        self.hyperparams = (
-            hyperparams if isinstance(hyperparams, dict) else hyperparams_dict
-        )
+        self.hyperparams = hyperparams if isinstance(hyperparams, dict) else hyperparams_dict
 
     def get_model_data(self, **kwargs):
         return get_model_data()
@@ -47,5 +45,4 @@ class Model:
         return download_network()
 
     def load_network(self):
-        # load network from /trained_models/model_name/state_dict.pt
         return None

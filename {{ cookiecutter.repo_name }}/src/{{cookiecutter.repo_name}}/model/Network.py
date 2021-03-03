@@ -6,12 +6,12 @@ class Network(nn.Module):
         super().__init__()
 
         # Layers & activations
-        self.fc_in = nn.Linear(300, 2048)
-        self.fc1 = nn.Linear(2048, 2048)
-        self.fc_out = nn.Linear(2048, 10)
+        self.fc_in = nn.Linear(256, 1024)
+        self.fc1 = nn.Linear(1024, 1024)
+        self.fc_out = nn.Linear(1024, 32)
         self.activation_hidden = nn.RReLU()
         self.activation_output = nn.Sigmoid()
-        self.drop_out = nn.Dropout(p=0.2)
+        self.drop_out = nn.Dropout(p=0.4)
 
         # Init weights
         nn.init.xavier_uniform_(self.fc_in.weight)
