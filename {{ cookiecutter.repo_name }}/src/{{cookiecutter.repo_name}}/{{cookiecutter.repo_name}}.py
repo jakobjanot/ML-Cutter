@@ -6,10 +6,10 @@ from .model import Network, train_model, predict, download_network
 from .performance import measure_performance
 
 class Model:
-    def __init__(self, network: torch.nn.Module = None, hyperparams: dict = None):
+    def __init__(self):
 
-        self.network = network if isinstance(network, torch.nn.Module) else Network()
-        self.hyperparams = hyperparams if isinstance(hyperparams, dict) else hyperparams_dict
+        self.network = Network()
+        self.hyperparams = hyperparams_dict
 
     def get_model_data(self, **kwargs):
         return get_model_data()
