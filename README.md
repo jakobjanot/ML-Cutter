@@ -37,8 +37,8 @@ The directory structure of your new project looks like this:
 │
 ├── references                          <- Data dictionaries, manuals, and all other explanatory materials.
 │
-├── reports                             <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures                         <- Generated graphics and figures to be used in reporting
+├── reports                             <- Generated analysis and reports.
+│   └── figures                         <- Generated graphics and figures to be used in reporting.
 │
 ├── src                                 <- Source code for use in this project.
 │   └── repo_name
@@ -48,39 +48,33 @@ The directory structure of your new project looks like this:
 │       ├── repo_name.py                <- Main model class that ties all functions together <3
 │       │
 │       ├── config                      <- Module containing configuration settings, such as hyperparameters.
-│       │   │                 
 │       │   ├── __init__.py
 │       │   └── hyperparams.py
 │       │ 
 │       ├── data                        <- Scripts to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
-│       │   │                 
 │       │   ├── __init__.py
 │       │   └── get_model_data.py
 │       │
-│       ├── features                    <- Scripts to turn raw data into features for modeling.
-│       │   │                 
+│       ├── features                    <- Scripts to turn raw data into features for modeling.     
 │       │   ├── __init__.py
 │       │   └── build_features.py
 │       │
-│       ├── model                       <- Scripts to define PyTorch Model, train it and make predictions.
-│       │   │                 
+│       ├── model                       <- Scripts to define PyTorch Model, train it and make predictions.  
 │       │   ├── __init__.py
 │       │   ├── Network.py
 │       │   ├── train_model.py
 │       │   └── predict.py
 │       │
-│       ├── performance                 <- Scripts to measure performance of trained models.
-│       │   │                 
+│       ├── performance                 <- Scripts to measure performance of trained models.     
 │       │   ├── __init__.py
 │       │   └── measure_performance.py
 │       │
 │       └── visualization               <- Scripts to reproducible data visualizations.
-│           │                 
 │           ├── __init__.py
 │           └── visualize.py
 │
-├── requirements.txt                    <- The requirements file for reproducing the analysis environment, e.g.
-│                                       generated with `pip freeze > requirements.txt`
+├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
+│                                       
 │
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported
 ```
