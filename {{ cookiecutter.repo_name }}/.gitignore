@@ -80,7 +80,6 @@ target/
 #data/dataset/val/*
 #data/dataset/test/*
 
-data/
 !.gitkeep
 
 #!data/dataset/train/.gitkeep
