@@ -1,1 +1,1 @@
-from .Model import Model
+from .{{cookiecutter.model_name}} import {{cookiecutter.model_name.capitalize()}}

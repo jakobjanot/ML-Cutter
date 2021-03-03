@@ -4,7 +4,7 @@ from .features import build_features
 from .model import Network, train_model, predict, download_network
 from .performance import measure_performance
 
-class Model:
+class {{cookiecutter.model_name.capitalize()}}:
     def __init__(self):
 
         self.network = Network()
