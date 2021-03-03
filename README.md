@@ -28,7 +28,7 @@ The directory structure of your new project looks like this:
 │        └── test
 │
 ├── trained_models                      <- Trained serialized models.
-│   └── model_x                             <- Example of a trained model directory
+│   └── model_x                             <- Example of a trained model directory (not required, only a suggestion)
 │       ├── state_dict.pt                       <- Trained model weights, serialized with torch.save()
 │       ├── log.pt                              <- Training log file, serialized with torch.save()
 │       └── events.out.tfevents                 <- TensorBoard events
@@ -84,7 +84,6 @@ The directory structure of your new project looks like this:
 │                                       generated with `pip freeze > requirements.txt`
 │
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported
-
 ```
 
 ### Workflow
