@@ -13,13 +13,13 @@ Generate the template:
 python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 ```
 
-## Project Structure
+## The Project Structure You'll Get
 The directory structure of your new project looks like this: 
 
 ```
 ├── LICENSE
 ├── README.md                           <- The top-level README for developers using this project.
-├── data                                <- Raw data, utility data and 
+├── data                                <- Data storage directory.
 │   ├── raw
 │   ├── utils        
 │   └── dataset      
@@ -28,10 +28,10 @@ The directory structure of your new project looks like this:
 │        └── test
 │
 ├── trained_models                      <- Trained serialized models.
-│   └── model_x                             <- Example of a trained model directory (not required, only a suggestion)
-│       ├── state_dict.pt                       <- Trained model weights, serialized with torch.save()
-│       ├── log.pt                              <- Training log file, serialized with torch.save()
-│       └── events.out.tfevents                 <- TensorBoard events
+│   └── model_x                             <- Example of a trained model directory (not required, only a suggestion).
+│       ├── state_dict.pt                       <- Trained model weights, serialized with torch.save().
+│       ├── log.json                            <- Training log file.
+│       └── events.out.tfevents                 <- TensorBoard events.
 │
 ├── notebooks                           <- Jupyter notebooks.
 │
@@ -43,7 +43,7 @@ The directory structure of your new project looks like this:
 ├── src                                 <- Source code for use in this project.
 │   └── repo_name
 │       │
-│       ├── __init__.py                 <- Makes model_name a Python module
+│       ├── __init__.py                 <- Makes model_name a Python module.
 │       │        
 │       ├── repo_name.py                <- Main model class that ties all functions together <3
 │       │
@@ -76,12 +76,12 @@ The directory structure of your new project looks like this:
 ├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
 │                                       
 │
-└── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported
+└── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported.
 ```
 
 ## Workflow
 
-Something about the workflow.
+Description of workflow.
 
 ### Credits
 
