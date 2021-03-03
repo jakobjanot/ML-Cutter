@@ -10,19 +10,19 @@ class {{cookiecutter.model_name.capitalize()}}:
         self.network = Network()
         self.hyperparams = hyperparams_dict
 
-    def get_model_data(self, **kwargs):
+    def get_model_data(self):
         return get_model_data()
 
-    def build_features(self, **kwargs):
+    def build_features(self):
         return build_features()
 
-    def train_model(self, **kwargs):
+    def train_model(self):
         return train_model()
 
-    def measure_performance(self, **kwargs):
+    def measure_performance(self):
         return measure_performance()
 
-    def build_model(self, **kwargs):
+    def build_model(self):
 
         # get model data
         self.get_model_data()
@@ -37,7 +37,7 @@ class {{cookiecutter.model_name.capitalize()}}:
         self.measure_performance()
 
 
-    def predict(self, **kwargs):
+    def predict(self):
         return predict()
 
     def download_network(self):
