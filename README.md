@@ -2,7 +2,7 @@
 Project structure template for packaging PyTorch models.
 
 
-### How to use it?
+## How to use it?
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the PyTorch model package template. So first install cookiecutter with pip:
 
 ``` bash
@@ -13,7 +13,7 @@ Generate the template:
 python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 ```
 
-### Project Structure
+## Project Structure
 The directory structure of your new project looks like this: 
 
 ```
@@ -67,8 +67,7 @@ The directory structure of your new project looks like this:
 │       │   ├── __init__.py
 │       │   ├── Network.py
 │       │   ├── train_model.py
-│       │   ├── predict.py
-│       │   └── train_model.py
+│       │   └── predict.py
 │       │
 │       ├── performance                 <- Scripts to measure performance of trained models.
 │       │   │                 
@@ -86,7 +85,7 @@ The directory structure of your new project looks like this:
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported
 ```
 
-### Workflow
+## Workflow
 
 Something about the workflow.
 

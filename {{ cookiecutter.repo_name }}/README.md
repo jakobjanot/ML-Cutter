@@ -56,8 +56,7 @@ Project Organization
 │       │   ├── __init__.py
 │       │   ├── Network.py
 │       │   ├── train_model.py
-│       │   ├── predict.py
-│       │   └── train_model.py
+│       │   └── predict.py
 │       │
 │       ├── performance                 <- Scripts to measure performance of trained models.
 │       │   │                 
