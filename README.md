@@ -2,6 +2,8 @@
 Project structure template for packaging PyTorch models.
 
 
+
+
 ## How to get started?
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the PyTorch model package template. So first install cookiecutter with pip:
 
@@ -13,8 +15,9 @@ Generate the template:
 python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
 ```
 
+
+
 ## The Project Structure You'll Get
-The directory structure of your new project looks like this: 
 
 ```
 ├── LICENSE
@@ -41,11 +44,11 @@ The directory structure of your new project looks like this:
 │   └── figures                         <- Generated graphics and figures to be used in reporting.
 │
 ├── src                                 <- Source code for use in this project.
-│   └── repo_name
+│   └── model_name
 │       │
 │       ├── __init__.py                 <- Makes model_name a Python module.
 │       │        
-│       ├── repo_name.py                <- Main model class that ties all functions together <3
+│       ├── model_name.py                <- Main model class that ties all functions together <3
 │       │
 │       ├── config                      <- Module containing configuration settings, such as hyperparameters.
 │       │   ├── __init__.py
@@ -79,9 +82,13 @@ The directory structure of your new project looks like this:
 └── setup.py                            <- makes project pip installable (pip install -e .) so src can be imported.
 ```
 
+
+
 ## Workflow
 
 Description of workflow.
+
+
 
 ### Credits
 
