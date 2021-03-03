@@ -1,4 +1,3 @@
-import torch
 from .config import hyperparams_dict
 from .data import get_model_data
 from .features import build_features
