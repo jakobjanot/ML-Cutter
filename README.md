@@ -1,4 +1,4 @@
-# MLCutter
+# MLCutter <img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter.png" align="right" height=250/>
 Project structure template for packaging PyTorch models.
 
 
