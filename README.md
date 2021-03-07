@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter.png" align="center">
 
 
-Project structure template for developing machine learning models as packages.
+Template for developing machine learning models as packages.
 
 
 
