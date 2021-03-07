@@ -1,4 +1,4 @@
-# PyTorch Model Package Template
+# MLCutter
 Project structure template for packaging PyTorch models.
 
 
