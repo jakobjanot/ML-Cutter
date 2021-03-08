@@ -6,7 +6,7 @@ Template for developing machine learning models as packages.
 
 
 ## How to get started?
-[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the PyTorch model package template. So first install cookiecutter with pip:
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the machine learning model package template. So first install cookiecutter with pip:
 
 ``` bash
 pip install cookiecutter
