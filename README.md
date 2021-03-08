@@ -13,7 +13,7 @@ pip install cookiecutter
 ```
 Generate the template:
 ``` bash
-python -m cookiecutter https://github.com/KasperJuunge/pytorch-package-template
+python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 ```
 
 
