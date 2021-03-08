@@ -1,4 +1,5 @@
 hyperparams_dict = {
-    "learning_rate": 1e-3,
-    "drop_out": 0.2,
+    'x': 1,
+    'y': 2,
+    'z': 3
 }

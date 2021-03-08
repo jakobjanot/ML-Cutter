@@ -1,16 +1,14 @@
 from .config import hyperparams_dict
-from .data import get_model_data
+from .data import get_raw_data
 from .features import build_features
-from .model import Network, train_model, predict, download_network
+from .model import train_model, predict
 from .performance import measure_performance
 
 class {{cookiecutter.model_name.capitalize()}}:
     def __init__(self):
+        pass
 
-        self.network = Network()
-        self.hyperparams = hyperparams_dict
-
-    def get_model_data(self):
+    def get_raw_data(self):
         return 
 
     def build_features(self):
@@ -39,9 +37,3 @@ class {{cookiecutter.model_name.capitalize()}}:
 
     def predict(self):
         return
-
-    def download_network(self):
-        return 
-
-    def load_network(self):
-        return 
