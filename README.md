@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter.png" align="center">
+<img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter-color.png" align="center">
 
 
 Template for developing machine learning models as packages.
