@@ -1,12 +1,12 @@
 <img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter-color.png" align="center">
 
 
-Template for developing machine learning models as packages.
+Machine learning models should be developed as packages. This template helps you with that! 💪📦
 
 
 
 ## How to get started?
-[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the machine learning model package template. So first install cookiecutter with pip:
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the template. So first install cookiecutter with pip:
 
 ``` bash
 pip install cookiecutter
