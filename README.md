@@ -61,7 +61,6 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 │       │
 │       ├── model                       <- Scripts to define PyTorch Model, train it and make predictions.  
 │       │   ├── __init__.py
-│       │   ├── Network.py
 │       │   ├── train_model.py
 │       │   └── predict.py
 │       │
@@ -82,7 +81,7 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 
 ## Workflow
 
-When the template is initialized it creates a project structure that is ready for developing your very own PyTorch model 🔥
+When the template is initialized it creates a blank project structure, ready for developing your very own model package 📦
 
 My typical workflow using this project structure is the following:
 
@@ -90,9 +89,9 @@ My typical workflow using this project structure is the following:
 
 First, get the data. Write the get_model_data() function to get the raw data for modeling. Place the raw data in ~/data_storage/raw/
 
-#### 2. Data Exploration
+#### 2. Exploratory Data Analysis
 
-Now we need to get our hands dirty! Explore the data, analyze the problem, make some plots, remove outliers and try to come up with some input features. This process is carried out using Jupyter Notebooks which should be placed in ~/notebooks/
+Now we need to get our hands dirty! Explore the data, analyze the problem, make some plots, remove outliers and try to come up with some input features. This process is carried out using Jupyter Notebooks which should be placed in ~/notebooks/. All plots written in this process should be written in the visualize module, so they can be reproduced whenever needed.
 
 #### 3. Build Features
 
@@ -100,9 +99,16 @@ When the data exploration phase is done, write the build_features() function tha
 
 #### 4. Train Model
 
-Now we're ready to train the model. In this phase ...
+Now we're ready to train the model. Write the train_model() function in the model module. The model should be imp Import the hyperparamters from the config module.
 
+#### 5. Measure performance
+some text here..
 
+#### 6. Write prediction function
+some text here..
+
+#### 7. Create model class
+some text here..
 
 ### Credits
 
