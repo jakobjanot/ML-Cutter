@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/KasperJuunge/mlcutter/main/mlcutter-color.png" align="center">
 
-
+## What is it?
 Machine learning models should be developed as packages. This template helps you with that! 💪📦
 
 
 
-## How to get started?
+## How to create a ML-Cutter template?
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) is used to generate the template. So first install cookiecutter with pip:
 
 ``` bash
@@ -86,26 +86,22 @@ When the template is initialized it creates a blank project structure, ready for
 My typical workflow using this project structure is the following:
 
 #### 1. Get Raw Data
-
 First, get the data. Write the get_model_data() function to get the raw data for modeling. Place the raw data in ~/data_storage/raw/
 
 #### 2. Exploratory Data Analysis
-
-Now we need to get our hands dirty! Explore the data, analyze the problem, make some plots, remove outliers and try to come up with some input features. This process is carried out using Jupyter Notebooks which should be placed in ~/notebooks/. All plots written in this process should be written in the visualize module, so they can be reproduced whenever needed.
+Now we need to get our hands dirty! Explore the data, analyze the problem, make some plots, remove outliers and try to come up with some input features. This process is carried out using Jupyter Notebooks which should be placed in ~/notebooks/
 
 #### 3. Build Features
-
-When the data exploration phase is done, write the build_features() function that turns the raw data into juicy features. The function should also split the dataset in train, validation and test set and place it in ~/data_storage/dataset/
+Now write the build_features() function which turns the raw data into juicy features. The function should also split the dataset in train, validation and test set and place it in ~/data_storage/dataset/
 
 #### 4. Train Model
-
-Now we're ready to train the model. Write the train_model() function in the model module. The model should be imp Import the hyperparamters from the config module.
+Now we're ready to train the model. Write the train_model() function in the model module. The hyperparameters can be imported from the hyperparams_dict in the config module. Save state_dicts in /trained_models/
 
 #### 5. Measure performance
-some text here..
+Write the measure_performance() function that calculates relevant metrics for a trained model on the test dataset.
 
 #### 6. Write prediction function
-some text here..
+Write the predict() function to make it as easy as possible to make predictions using a trained model.
 
 #### 7. Create model class
 some text here..
