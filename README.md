@@ -24,12 +24,14 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 ├── LICENSE
 ├── README.md                           <- The top-level README for developers using this project.
 ├── data_storage                        <- Data storage directory.
-│   ├── raw
-│   ├── utils        
-│   └── dataset      
-│        ├── train
-│        ├── val
-│        └── test
+│   │
+│   ├── raw                             <- Store raw data here
+│   │
+│   ├── interim                         <- Save intermediate data here. Ex. data that takes forever to generate.        
+│   │
+│   ├── utils                           <- Utility data like lookup dictionaries, lists of names etc, goes here.
+│   │
+│   └── dataset                         <- Save the final dataset here. 
 │
 ├── trained_models                      <- Trained serialized models.
 │
@@ -38,6 +40,7 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 ├── references                          <- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports                             <- Directory for analysis and reports.
+│   │
 │   └── figures                         <- Generated graphics and figures to be used in reporting.
 │
 ├── src                                 <- Source code for use in this project.
@@ -45,32 +48,23 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 │       │
 │       ├── __init__.py                 <- Makes model_name a Python module.
 │       │        
-│       ├── model_name.py               <- Main model class that ties all functions together <3
+│       ├── model_name.py               <- Main model class that ties functions from all the submodules together <3
 │       │
-│       ├── config                      <- Module containing configuration settings, such as hyperparameters.
-│       │   ├── __init__.py
-│       │   └── hyperparams.py
+│       ├── config.py                   <- Module containing configuration settings, such as hyperparameters.
 │       │ 
-│       ├── data                        <- Scripts to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
-│       │   ├── __init__.py
-│       │   └── get_model_data.py
+│       ├── data                        <- Functions to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
 │       │
-│       ├── features                    <- Scripts to turn raw data into features for modeling.     
-│       │   ├── __init__.py
-│       │   └── build_features.py
+│       ├── features                    <- Functions to turn raw data into features for modeling.     
 │       │
-│       ├── model                       <- Scripts to define PyTorch Model, train it and make predictions.  
-│       │   ├── __init__.py
-│       │   ├── train_model.py
-│       │   └── predict.py
+│       ├── model                       <- Functions to define model.
 │       │
-│       ├── performance                 <- Scripts to measure performance of trained models.     
-│       │   ├── __init__.py
-│       │   └── measure_performance.py
+│       ├── train                       <- Functions to train model.
 │       │
-│       └── visualization               <- Scripts to write reproducible and insightful data visualizations :p
-│           ├── __init__.py
-│           └── visualize.py
+│       ├── predict                     <- Functions to make predictions with model
+│       │
+│       ├── performance                 <- Functions to measure performance of trained models.     
+│       │
+│       └── visualization               <- Fucntions to create reproducible and insightful data visualizations 
 │
 ├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
 │                                       
