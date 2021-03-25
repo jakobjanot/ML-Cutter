@@ -52,19 +52,19 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 │       │
 │       ├── config.py                   <- Module containing configuration settings, such as hyperparameters.
 │       │ 
-│       ├── data                        <- Functions to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
+│       ├── data.py                     <- Functions to get raw data. The raw data should be placed in ~/data/raw/ in the project root.
 │       │
-│       ├── features                    <- Functions to turn raw data into features for modeling.     
+│       ├── features.py                 <- Functions to turn raw data into features for modeling.     
 │       │
-│       ├── model                       <- Functions to define model.
+│       ├── model.py                    <- Functions to define model.
 │       │
-│       ├── train                       <- Functions to train model.
+│       ├── train.py                    <- Functions to train model.
 │       │
-│       ├── predict                     <- Functions to make predictions with model
+│       ├── predict.py                  <- Functions to make predictions with model
 │       │
-│       ├── performance                 <- Functions to measure performance of trained models.     
+│       ├── performance.py              <- Functions to measure performance of trained models.     
 │       │
-│       └── visualization               <- Fucntions to create reproducible and insightful data visualizations 
+│       └── visualization.py            <- Fucntions to create reproducible and insightful data visualizations 
 │
 ├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
 │                                       
