@@ -2,7 +2,7 @@ class {{cookiecutter.model_name.capitalize()}}:
     def __init__(self):
         pass
 
-    def get_raw_data(self):
+    def get_data(self):
         return 
 
     def build_features(self):
