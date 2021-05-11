@@ -1,5 +1,3 @@
 
-def visualize():
-    # make relevant visualization of something insightful :p
-    print('Visualize!')
+def build_analysis():
     return
