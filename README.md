@@ -64,7 +64,7 @@ python -m cookiecutter https://github.com/KasperJuunge/ML-Cutter
 │       │
 │       ├── performance.py              <- Functions to measure performance of trained models.     
 │       │
-│       └── visualization.py            <- Fucntions to create reproducible and insightful data visualizations 
+│       └── analysis.py                <- Fucntions to create reproducible analysis.
 │
 ├── requirements.txt                    <- The requirements file for reproducing the analysis environment. 
 │                                       
